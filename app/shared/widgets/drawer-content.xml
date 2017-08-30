@@ -1,0 +1,10 @@
+<grid-layout class="drawer-content">
+  <ScrollView>
+  <stack-layout height="1400">
+    <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
+    <label text="About" tap="navigate" class="{{ selectedPage == 'about' ? 'selected' : '' }}" />
+    <label text="Settings" tap="navigate" class="{{ selectedPage == 'settings' ? 'selected' : '' }}" />
+    <Slider minValue="0" maxValue="1000" value="50" valueChange="onSecondSliderChange($event)" class="slider" ></Slider>
+  </stack-layout>
+</ScrollView>
+</grid-layout>
